@@ -1,0 +1,30 @@
+            - nombre: Acción de prueba rápida para Datadog
+  # Puedes fijar la confirmación exacta o la versión.
+  # usos: DataDog/swift-test-action@72dbb684305bfae8f28230a59c02765011937cd4
+  usos: DataDog/swift-test-action@1.0.1
+  cu:
+    # Clave API de Datadog
+    api_key: 
+    # Clave de la aplicación Datadog
+    app_key: # opcional
+    # Clave de aplicación Datadog (obsoleta)
+    application_key: # opcional
+    # Plataforma a ejecutar: \"ios\", \"macos\" o \"tvos\". Por defecto: \"ios\"
+    plataforma: # opcional, el valor predeterminado es ios
+    # Archivo .xcworkspace, si no está configurado, el espacio de trabajo se seleccionará automáticamente
+    espacio de trabajo: # opcional
+    # Archivo .xcodeproj, si no está configurado, el proyecto se seleccionará automáticamente
+    proyecto: # opcional
+    # Esquema a probar, si no está configurado, el esquema se seleccionará automáticamente
+    esquema: # opcional
+    # SDK utilizado para la construcción, de forma predeterminada: se utilizará \"iphonesimulator\"
+    sdk: # opcional
+    # Destino para la prueba،por defecto: \"platform=iOS Simulator,name=iPhone 13\"
+    destino: # opcional
+    # Configuración para pruebas, por defecto: \"Debug\"
+    configuración: # opcional
+    # Versión del marco de prueba Datagog SDK que se utilizará para las pruebas, de forma predeterminada la última versión estable
+    LibraryVersion: # opcional
+    # Estas entradas se agregarán directamente al comando de compilación/prueba
+    extraParameters: # opcional, el valor predeterminado es 
+          
