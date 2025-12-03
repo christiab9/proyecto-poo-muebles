@@ -88,6 +88,11 @@ public class Productos extends javax.swing.JPanel {
         jScrollPane1.setViewportView(txt_resultado);
 
         jButton1.setText("Buscar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         btn_guardar.setText("Guardar");
         btn_guardar.addActionListener(new java.awt.event.ActionListener() {
@@ -209,14 +214,14 @@ public class Productos extends javax.swing.JPanel {
     private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
      Connection con = dbConcetion.conectar();
 
-    // 2. Consulta SQL
+   
     String sql = "INSERT INTO productos (id, nombre, tipo, material, fecha_actual, cantidad) VALUES (?, ?, ?, ?, ?, ?)";
 
     try {
-        // 3. Preparar la sentencia
+        
         PreparedStatement ps = con.prepareStatement(sql);
 
-        // 4. Pasar valores
+        
         ps.setInt(1, Integer.parseInt(txt_id.getText()));
         ps.setString(2, txt_nombre.getText());
         ps.setString(3, cmb_tipo.getSelectedItem().toString());
@@ -224,10 +229,10 @@ public class Productos extends javax.swing.JPanel {
         ps.setDate(5, java.sql.Date.valueOf(LocalDate.now()));
         ps.setInt(6, Integer.parseInt(txt_cantidad.getText()));
 
-        // 5. Ejecutar
+        
         ps.executeUpdate();
 
-        // 6. Mensaje
+       
         JOptionPane.showMessageDialog(this, "Producto guardado correctamente");
 
     } catch (SQLException e) {
@@ -239,6 +244,10 @@ public class Productos extends javax.swing.JPanel {
     private void txt_cantidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_cantidadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_cantidadActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
