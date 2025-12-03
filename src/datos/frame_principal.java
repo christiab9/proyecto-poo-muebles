@@ -48,11 +48,11 @@ public class frame_principal extends javax.swing.JFrame {
         Content.setLayout(ContentLayout);
         ContentLayout.setHorizontalGroup(
             ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 610, Short.MAX_VALUE)
+            .addGap(0, 675, Short.MAX_VALUE)
         );
         ContentLayout.setVerticalGroup(
             ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 673, Short.MAX_VALUE)
         );
 
         jButton1.setText("Ventas");
@@ -108,7 +108,7 @@ public class frame_principal extends javax.swing.JFrame {
                 .addComponent(jButton3)
                 .addGap(48, 48, 48)
                 .addComponent(jButton4)
-                .addContainerGap(252, Short.MAX_VALUE))
+                .addContainerGap(312, Short.MAX_VALUE))
             .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 

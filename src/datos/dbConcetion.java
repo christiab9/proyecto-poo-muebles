@@ -20,7 +20,6 @@ static String pass="admin";
     } catch (SQLException e) {
         e.printStackTrace();
     }
-
     return con;
 }
 }
