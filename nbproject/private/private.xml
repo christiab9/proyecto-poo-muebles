@@ -5,9 +5,10 @@
         <group>
             <file>file:/C:/Users/christian/Documents/NetBeansProjects/proyecto_poo/src/datos/ProeyectoPoo.java</file>
             <file>file:/C:/Users/christian/Documents/NetBeansProjects/proyecto_poo/src/datos/Reporte.java</file>
-            <file>file:/C:/Users/christian/Documents/NetBeansProjects/proyecto_poo/src/datos/frame_principal.java</file>
             <file>file:/C:/Users/christian/Documents/NetBeansProjects/proyecto_poo/src/datos/dbConcetion.java</file>
-            <file>file:/C:/Users/christian/Documents/NetBeansProjects/proyecto_poo/src/datos/Ventas.java</file>
+            <file>file:/C:/Users/christian/Documents/NetBeansProjects/proyecto_poo/src/datos/Productos.java</file>
+            <file>file:/C:/Users/christian/Documents/NetBeansProjects/proyecto_poo/src/datos/frame_principal.java</file>
+            <file>file:/C:/Users/christian/Documents/NetBeansProjects/proyecto_poo/src/datos/Clientes.java</file>
         </group>
     </open-files>
 </project-private>
